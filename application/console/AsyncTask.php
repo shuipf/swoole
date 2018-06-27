@@ -26,6 +26,7 @@ class AsyncTask extends Command
         // server 运行前配置
         $this->server->set(
             [
+                'log_level' => SWOOLE_LOG_ERROR,
                 'worker_num' => 4,
                 'daemonize' => false,
                 'task_worker_num' => 4  # task 进程数
