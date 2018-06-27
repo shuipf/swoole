@@ -66,7 +66,7 @@ class AsyncTask extends Command
         echo "Dispath AsyncTask: id={$task_id}\n";
 
         // 将受到的客户端消息再返回给客户端
-        $server->send($fd, "Message form Server: {$data}， task_id: {$task_id}");
+        $server->send($fd, "Message form Server: {$data}， task_id: {$task_id} \n");
     }
 
     // 异步任务处理函数
