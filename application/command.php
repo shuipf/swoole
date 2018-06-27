@@ -11,4 +11,5 @@
 
 return [
     'app\console\TcpServer',
+    'app\console\AsyncTask',
 ];
